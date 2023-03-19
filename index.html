@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIHYE</title>
+    <link href = "style.css" rel = "stlyesheet" type ="text/css">
+    <style>
+        body {height: 4000px;}
+        #top {position: fixed; bottom: 50px; right: 50px;}
+        .nav {
+            height: 50px;
+            border-bottom: 1px solid black;
+            display: flex;
+            align-items: center;
+        }
+        .nav-items {
+            display: flex;
+            margin-left: auto;
+            margin-right: 10px;
+        }
+        .nav-item{
+            margin-left: 10px;
+        }
+        .title{
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .subtitle{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 300;
+        }
+        body {
+            background-image : url("https://static.vecteezy.com/system/resources/previews/002/418/541/original/watercolor-hand-painted-background-texture-free-vector.jpg");}
+    </style>
 </head>
 <body>
-  <p>Hello, World!</p>
+
+<div class="nav">
+    JIHYE
+    <div class="nav-items">
+    <div class="nav-item">info</div>
+    <div class="nav-item">like</div>
+    <div class="nav-item">ect</div>
+    </div>
+</div>
+<div class="main">
+<div class = "title">
+    top버튼 상단으로 이동하기
+</div>
+<div class="subtitle">
+    안녕하세요^-^가나다라마바사아자차카타파하 반갑습니다^-^
+</div>
+</div>
+    <button id="top">top</button>
+    <script>
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+
+});
+}
+var button = document.getElementById("top");
+button.addEventListener("click", scrollToTop);
+    </script>
 </body>
 </html>
